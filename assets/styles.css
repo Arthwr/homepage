@@ -2,7 +2,7 @@
   font-family: "Roboto", "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
   font-weight: normal;
   font-size: 1.5rem;
-  --header-bg: #ccdad1;
+  --header-bg: #34435e;
   --font-text: #fff;
   --muted-text-color: #6c757d;
 }
@@ -13,6 +13,10 @@ h3,
 h4 {
   font-family: "Playfair Display", "Iowan Old Style", "Palatino Linotype", "URW Palladio L", P052, serif;
   font-weight: normal;
+}
+
+h2 {
+  font-size: 2rem;
 }
 
 picture > img {
@@ -76,17 +80,13 @@ figcaption > h1 {
   background-color: var(--font-text);
   padding: 2rem 1.5rem 2rem 1.5rem;
   max-width: 60ch;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Shadow to the bottom-right */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 .h-info-container article {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-}
-
-.h-info-container h2 {
-  font-size: 2rem;
 }
 
 .h-info-container p {
