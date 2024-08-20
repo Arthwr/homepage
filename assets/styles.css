@@ -23,6 +23,12 @@ picture > img {
   object-fit: cover;
 }
 
+/* Utility */
+
+.muted {
+  color: var(--muted-text-color);
+}
+
 /* Header */
 header {
   position: relative;
@@ -42,7 +48,8 @@ header::before {
 
 .head-container {
   display: flex;
-  justify-content: center;
+  max-width: 2000px;
+  margin: 0 auto;
   padding: 2rem 4rem 0 4rem;
 }
 
@@ -89,10 +96,6 @@ figcaption > h1 {
   gap: 1.5rem;
 }
 
-.h-info-container p {
-  color: var(--muted-text-color);
-}
-
 .h-socials-container {
   display: flex;
   justify-content: end;
@@ -107,4 +110,42 @@ figcaption > h1 {
 .h-socials-container img {
   width: 48px;
   height: 48px;
+}
+
+/* Main */
+main {
+  margin-bottom: 4rem;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 0 4rem 0 4rem;
+}
+
+.m-projects-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-auto-rows: auto;
+}
+
+.m-projects-container img {
+  min-height: 600px;
+}
+
+.m-card-content {
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem 1rem;
+  flex-direction: column;
+  border: 1px solid transparent;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.m-card-head {
+  display: flex;
 }
