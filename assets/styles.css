@@ -24,7 +24,6 @@ picture > img {
 }
 
 /* Utility */
-
 .muted {
   color: var(--muted-text-color);
 }
@@ -107,9 +106,9 @@ figcaption > h1 {
   gap: 1rem;
 }
 
-.h-socials-container img {
-  width: 48px;
-  height: 48px;
+.h-socials-container li {
+  width: 2em;
+  height: auto;
 }
 
 /* Main */
@@ -133,13 +132,13 @@ main {
   grid-auto-rows: auto;
 }
 
-.m-projects-container img {
+.card-img {
   min-height: 600px;
 }
 
 .m-card-content {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
   padding: 1rem 1rem;
   flex-direction: column;
   border: 1px solid transparent;
@@ -148,4 +147,17 @@ main {
 
 .m-card-head {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.m-card-links-container ul {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.m-card-links-container li {
+  width: 1.5em;
+  height: auto;
 }
