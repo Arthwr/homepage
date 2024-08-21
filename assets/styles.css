@@ -5,8 +5,10 @@
   --header-bg: #34435e;
   --font-text: #fff;
   --muted-text-color: #6c757d;
+  --footer-bg: #8bb174;
 }
 
+/* Styles reset */
 h1,
 h2,
 h3,
@@ -21,6 +23,10 @@ h2 {
 
 picture > img {
   object-fit: cover;
+}
+
+address {
+  font-style: normal;
 }
 
 /* Utility */
@@ -160,4 +166,76 @@ main {
 .m-card-links-container li {
   width: 1.5em;
   height: auto;
+}
+
+/* Footer */
+footer {
+  color: var(--font-text);
+  background-color: var(--footer-bg);
+}
+
+.footer-container {
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+}
+
+.f-content-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.f-content-container article {
+  flex-basis: 30%;
+  flex-shrink: 1;
+  max-width: 500px;
+}
+
+.f-content-container article ul,
+address {
+  margin-top: 1.5rem;
+}
+
+.f-content-container picture {
+  flex-shrink: 2;
+  flex-basis: 70%;
+}
+
+.f-content-container h2 {
+  margin-bottom: 1.5rem;
+}
+
+.f-content-container a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.f-content-container a div {
+  width: 1.5em;
+  height: auto;
+}
+
+.f-content-container ul {
+  display: flex;
+  justify-content: start;
+  gap: 0.5rem;
+}
+
+.f-content-container li {
+  width: 1.5em;
+  height: auto;
+}
+
+address {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+address div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
