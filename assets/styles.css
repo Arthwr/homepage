@@ -139,6 +139,7 @@ main {
 }
 
 .card-img {
+  width: 100%;
   min-height: 600px;
 }
 
