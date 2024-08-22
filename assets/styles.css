@@ -18,7 +18,7 @@ h4 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 picture > img {
@@ -79,7 +79,7 @@ figcaption {
   color: var(--font-text);
 }
 
-figcaption > h1 {
+h1 {
   font-size: 2.5rem;
   letter-spacing: 0.1em;
 }
@@ -187,7 +187,7 @@ footer {
 }
 
 .f-content-container article {
-  flex-basis: 30%;
+  flex-basis: 40%;
   flex-shrink: 1;
   max-width: 500px;
 }
@@ -199,7 +199,7 @@ address {
 
 .f-content-container picture {
   flex-shrink: 2;
-  flex-basis: 70%;
+  flex-basis: 60%;
 }
 
 .f-content-container h2 {
@@ -238,4 +238,162 @@ address div {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+/* Media queries */
+@media screen and (max-width: 1025px) {
+  p,
+  article {
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  h1 {
+    line-height: 1.1;
+  }
+
+  .head-container {
+    padding-top: 4rem;
+  }
+
+  .h-content-container,
+  .h-info-container,
+  .h-info-container > article {
+    display: block;
+  }
+
+  .h-info-container {
+    padding: 0rem 1rem 1rem;
+  }
+
+  .h-info-container h2 {
+    padding-top: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .h-photo-container {
+    padding: 0 1rem 0.5rem 0;
+    float: left;
+  }
+
+  .h-photo-container img {
+    max-width: 400px;
+    height: auto;
+  }
+
+  figcaption {
+    top: -30%;
+    left: 15%;
+    background: none;
+    height: fit-content;
+  }
+
+  .h-socials-container li {
+    width: 1.5em;
+  }
+
+  .head-container,
+  .main-container,
+  .footer-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .f-content-container {
+    flex-direction: column-reverse;
+  }
+
+  .f-content-container ul > * {
+    flex: 1;
+    max-width: 2.5rem;
+  }
+
+  .f-content-container img {
+    max-height: 600px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .head-container {
+    padding: 6rem 1.5rem 1.5rem;
+  }
+
+  .h-content-container,
+  .h-info-container,
+  .h-info-container > article {
+    display: flex;
+  }
+
+  .h-photo-container {
+    padding: 0;
+  }
+
+  .h-photo-container img {
+    max-width: 100%;
+  }
+
+  figcaption {
+    top: -36%;
+    left: 0;
+  }
+
+  .h-content-container {
+    flex-direction: column;
+  }
+
+  .h-info-container h2 {
+    margin: 0;
+    padding-top: 0.5rem;
+  }
+
+  .h-info-container article {
+    gap: 0.5rem;
+  }
+
+  .f-content-container article {
+    text-align: center;
+  }
+
+  .f-content-container ul {
+    justify-content: center;
+  }
+
+  address > div:nth-child(2) {
+    align-items: center;
+  }
+
+  .card-img {
+    min-height: 400px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .head-container {
+    padding-top: 4rem;
+  }
+
+  .f-content-container img {
+    max-width: 350px;
+  }
+
+  .head-container,
+  .main-container,
+  .footer-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }

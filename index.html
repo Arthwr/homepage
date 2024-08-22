@@ -21,8 +21,15 @@
           <div class="h-photo-container">
             <figure>
               <picture>
-                <source />
-                <img src="assets/img/ashley1200.webp" width="1200" height="800" alt="Ashley Williams" />
+                <source srcset="assets/img/ashleyZoomed800.webp 400w" media="(max-width: 769px)" />
+                <img
+                  src="assets/img/ashley2400.webp"
+                  srcset="assets/img/ashley1200.webp 1200w, assets/img/ashley2400.webp 2400w"
+                  sizes="(max-width: 1025px) 600px, 1200px"
+                  width="1200"
+                  height="800"
+                  alt="Ashley Williams"
+                />
               </picture>
               <figcaption>
                 <h1>Ashley Williams</h1>
@@ -289,7 +296,15 @@
             </ul>
           </article>
           <picture>
-            <img src="assets/img/sleepycat2400.webp" width="1200px" height="800px" alt="Sleepy cat" />
+            <source srcset="assets/img/sleepycat1200.webp 600w" media="(max-width: 769px)" />
+            <img
+              src="assets/img/sleepycat2400.webp"
+              srcset="assets/img/sleepycat1200.webp 1200w, assets/img/sleepycat2400.webp 2400w"
+              sizes="(max-width: 1025px) 600px, 1200px"
+              width="1200px"
+              height="800px"
+              alt="Sleepy cat"
+            />
           </picture>
         </div>
       </div>
